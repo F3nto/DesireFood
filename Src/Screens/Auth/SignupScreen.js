@@ -1,11 +1,18 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { SafeAreaView, View, Text, StyleSheet } from 'react-native'
 
 const SignupScreen = () => {
   return (
-    <View>
-      <Text>SignupScreen</Text>
+
+    <SafeAreaView style = {styles.container}>
+
+    <View style = {styles.content}>
+
+      <Text>Signup screen</Text>
+
     </View>
+
+    </SafeAreaView>
   )
 }
 
@@ -13,7 +20,9 @@ export default SignupScreen;
 
 const styles = StyleSheet.create({
 
+  container : {flex:1},
+
+  content   : {flex:1}
 
     
 })
-
